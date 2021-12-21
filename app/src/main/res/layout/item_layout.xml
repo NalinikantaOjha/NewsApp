@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:id="@+id/crCardView1"
+    android:background="#464646"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp">
+
+
+        <ImageView
+            android:src="@drawable/loading"
+            android:id="@+id/ivImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ImageView>
+
+        <TextView
+android:layout_marginBottom="50dp"
+            android:layout_alignBottom="@+id/ivImageView"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/tvTitle"
+            android:text="nelinoi"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:text="CNN"
+            android:layout_alignBottom="@+id/ivImageView"
+android:id="@+id/sorce"
+            android:layout_marginLeft="100dp"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+
