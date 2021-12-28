@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() ,OnClick{
     lateinit var viewModel2: MainViewModel
     lateinit var repository: DataRepository
     private var List = mutableListOf<Article>()
-    private var miusicList= mutableListOf<NewsEntity>()
+    private var newsList= mutableListOf<NewsEntity>()
     lateinit var dao: Dao
 
     var page: Int = 1
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() ,OnClick{
 
         viewModel2.getData().observe(this, Observer {
 
-            miusicList.addAll(it)
+            newsList.addAll(it)
             setRecycle()
         })
 
@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity() ,OnClick{
         })
     }
     fun setRecycle() {
-        adapter2 = Adapter(miusicList, this, this)
+        adapter2 = Adapter(newsList, this, this)
         recycleAll.adapter = adapter2
         recycleAll.layoutManager = LinearLayoutManager(this)
     }
