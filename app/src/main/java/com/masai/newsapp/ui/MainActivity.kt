@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() ,OnClick{
         setContentView(R.layout.activity_main)
 
         manager = LinearLayoutManager(this)
-        dao= Newsdatabase.getMusicDatabase(this).getMusic()
+        dao= Newsdatabase.getNewsDatabase(this).getNews()
 
         val userApi = Network.getInstance().create(ApiService::class.java)
         repository = DataRepository(userApi,dao)

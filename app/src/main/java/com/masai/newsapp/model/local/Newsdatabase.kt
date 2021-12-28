@@ -8,10 +8,10 @@ import androidx.room.RoomDatabase
 @Database(entities = [NewsEntity::class],version = 1)
 
 abstract class Newsdatabase :RoomDatabase(){
-    abstract fun getMusic():Dao
+    abstract fun getNews():Dao
     companion object{
         private var instance:Newsdatabase?=null
-        fun getMusicDatabase(context: Context):Newsdatabase{
+        fun getNewsDatabase(context: Context):Newsdatabase{
             if (instance!=null){
                 return instance!!
             }else{
